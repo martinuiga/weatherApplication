@@ -4,45 +4,6 @@
 	flex-direction: row;
 }
 
-.forecastDate {
-	line-height: 150px;
-	width: 30%;
-}
-
-.dayLabel {
-	line-height: 150px;
-	width: 15%;
-	font-weight: bold;
-}
-
-.dayLogo {
-	width: 10%;
-	margin-top: 50px;
-}
-
-.dayTempContainer {
-	width: 15%;
-	margin-top: 60px;
-	flex-direction: column;
-}
-
-.nightLogo {
-	width: 5%;
-	margin-top: 50px;
-}
-
-.nightLabel {
-	width: 15%;
-	line-height: 150px;
-	font-weight: bold;
-}
-
-.nightTempContainer {
-	width: 15%;
-	margin-top: 60px;
-	flex-direction: column;
-}
-
 .buttonDiv {
 	margin-top: 20px;
 }

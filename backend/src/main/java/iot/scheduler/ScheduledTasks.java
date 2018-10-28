@@ -15,13 +15,13 @@ public class ScheduledTasks {
 
     private static final Logger log = LoggerFactory.getLogger(ScheduledTasks.class);
 
-    public static StringBuilder stringBuilder = new StringBuilder();
+    public static StringBuilder xmlResponse = new StringBuilder();
 
     private final String USER_AGENT = "Mozilla/5.0";
 
     @Scheduled(fixedRate = 900000)
     public void reportCurrentTime() throws IOException {
-        stringBuilder.setLength(0);
+		xmlResponse.setLength(0);
 
         log.info("Getting information from weather API");
 
@@ -43,6 +43,6 @@ public class ScheduledTasks {
         }
         in.close();
 
-        stringBuilder.append(response).toString();
+		xmlResponse.append(response).toString();
     }
 }

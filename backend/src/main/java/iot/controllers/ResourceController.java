@@ -14,7 +14,7 @@ public class ResourceController {
     @CrossOrigin
     @RequestMapping("/weatherData")
     public JsonNode getWeatherData() throws JsonProcessingException {
-        JsonNode jsonNode = XMLParser.XMLtoJSON(ScheduledTasks.stringBuilder.toString());
+        JsonNode jsonNode = XMLParser.XMLtoJSON(ScheduledTasks.xmlResponse.toString());
         return jsonNode;
     }
 }
